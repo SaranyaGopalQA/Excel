@@ -1,6 +1,6 @@
 public class Read {
     File f=new File("\\Desktop\\login.xlsx");
-    FileInputStream fi=new FileInputStream("C:\\Users\\saranya.cp\\Desktop\\login.xlsx");
+    FileInputStream fi=new FileInputStream("\\Desktop\\login.xlsx");
     XSSFWorkbook wb1=new XSSFWorkbook(fi);
     XSSFSheet sheet1=wb1.getSheetAt(0);
     //Get the current count of rows in excel file
@@ -22,7 +22,7 @@ public class Read {
     }
 
         fi.close();
-    FileOutputStream fo=new FileOutputStream("C:\\Users\\saranya.cp\\Desktop\\login.xlsx");
+    FileOutputStream fo=new FileOutputStream("\\Desktop\\login.xlsx");
         wb1.write(fo);
         wb1.close();
 
