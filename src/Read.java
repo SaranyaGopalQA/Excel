@@ -7,6 +7,7 @@ public class Read {
     int rowCount = sheet1.getLastRowNum()-sheet1.getFirstRowNum();
     //Get the first row from the sheet
     Row row1 = sheet1.getRow(0);
+    Row row2=sheet1.getRow(1);
     //Create a new row and append it at last of sheet
     Row newRow = sheet1.createRow(rowCount+1);
     //Create a loop over the cell of newly created Row
